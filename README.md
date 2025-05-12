@@ -1,3 +1,6 @@
+# PROTÓTIPO em Desenvolvimento
+**Data de Início:** 05/2025
+**Data de término:** 10/2025 (previsão)
 # Energia Remota - Monitore a Bateria dos Seus Dispositivos à Distância
 
 [![Licença](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
@@ -71,10 +74,10 @@ Este projeto está licenciado sob a licença [MIT](LICENSE) - consulte o arquivo
 
 ## Autor
 
-[Seu Nome/Nome da Equipe]
-[Seu Email]
-[Seu GitHub](https://github.com/seu-usuario)
-[Seu Website (opcional)]
+mayck_eduardo
+mayck22.03@hotmail.com
+https://github.com/Mayck-Edu/
+
 
 ---
 
