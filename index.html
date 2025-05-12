@@ -5,18 +5,21 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
-    <h2>Info</h2>
-<span id="01"></span><br>
-<span id="02"></span><br>
-<span id="03"></span><br>
-<span id="04"></span>
+    <section>
+        <h2>Info</h2>
+        <span id="01"></span><br>
+        <span id="02"></span><br>
+        <span id="03"></span><br>
+        <span id="04"></span>
+    </section>
 </body>
 
 <script>
-    
+
     navigator.getBattery().then((battery) => {
         function updateAllBatteryInfo() {
             updateChargeInfo();
