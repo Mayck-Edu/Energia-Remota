@@ -8,10 +8,15 @@
 </head>
 
 <body>
-
+    <h2>Info</h2>
+<span id="01"></span><br>
+<span id="02"></span><br>
+<span id="03"></span><br>
+<span id="04"></span>
 </body>
 
 <script>
+    
     navigator.getBattery().then((battery) => {
         function updateAllBatteryInfo() {
             updateChargeInfo();
@@ -26,6 +31,7 @@
         });
         function updateChargeInfo() {
             console.log(`Battery charging? ${battery.charging ? "Yes" : "No"}`);
+            document.getElementById("01").innerText = `Bateria está carregando: ${battery.charging ? "Sim" : "Não"}`;
         }
 
         battery.addEventListener("levelchange", () => {
@@ -33,6 +39,7 @@
         });
         function updateLevelInfo() {
             console.log(`Battery level: ${battery.level * 100}%`);
+            document.getElementById("02").innerText = `Battery level: ${battery.level * 100}%`;
         }
 
         battery.addEventListener("chargingtimechange", () => {
@@ -40,6 +47,7 @@
         });
         function updateChargingInfo() {
             console.log(`Battery charging time: ${battery.chargingTime} seconds`);
+            document.getElementById("03").innerText = `Battery charging time: ${battery.chargingTime} seconds`;
         }
 
         battery.addEventListener("dischargingtimechange", () => {
@@ -47,6 +55,7 @@
         });
         function updateDischargingInfo() {
             console.log(`Battery discharging time: ${battery.dischargingTime} seconds`);
+            document.getElementById("04").innerText = `Battery discharging time: ${battery.dischargingTime} seconds`;
         }
     });
 
